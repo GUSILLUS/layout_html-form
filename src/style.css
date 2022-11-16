@@ -1,1 +1,7 @@
-/* styles go here */
+input {
+  margin: 10px auto;
+}
+
+.fieldset {
+  margin: 20px auto;
+}
