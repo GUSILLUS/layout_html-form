@@ -1,8 +1,21 @@
-input {
-  margin: 0 auto 10px;
+.field {
+  display: block;
+  margin-bottom: 10px;
 }
 
-fieldset {
+.inline {
+  display: inline-block;
+}
+
+.inlineYN {
+  display: inline-block;
+  /* margin-bottom: 10px; */
+}
+
+.fieldset {
   margin-bottom: 20px;
-  min-width: auto;
+}
+
+.lastOne {
+  margin-bottom: 0;
 }

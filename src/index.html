@@ -1,5 +1,4 @@
 <!doctype html>
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
@@ -9,7 +8,6 @@
   <title>HTML Form</title>
   <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
   <form method="post" 
   action="https://mate-academy-form-lesson.herokuapp.com/create-application" autocomplete="off"
@@ -17,26 +15,21 @@
 
     <fieldset class="fieldset">
       <legend> Personal information </legend>
-      <label for="sname">Surname:
+      <label class="field" for="sname">Surname:
         <input type="text" id="sname">
       </label>
-      <br>
-      <label for="name">Name:</label>
-      <input type="text" id="name">
-      <br>
-      <label for="age">
+      <label class="field" for="name">Name: <input type="text" id="name"> </label>
+      <label class="field" for="age">
         How old are You?
         <input type="number" id="age" 
         value="12" min="1"
         max="100"
         >
       </label>
-      <br>
-      <label for="birthday">Full date of birth:
+      <label class="field" for="birthday">Full date of birth:
         <input type="date" id="birthday">
       </label>
-      <br>
-      <label for="accept">I accept the term of the agreement
+      <label class="field lastOne" for="accept">I accept the term of the agreement
         <input type="checkbox" id="accept" 
         name="accept"
         >
@@ -45,47 +38,46 @@
 
     <fieldset class="fieldset">
       <legend>Registration</legend>
-      <label for="email">
-        E-mail:
+      <label class="field" for="email">
+        E-mail: 
+        <input type="email" id="email" 
+        name="email" required 
+        placeholder="email@example.com"
+        >
       </label>
-      <input type="email" id="email" 
-      name="email" required 
-      placeholder="email@example.com"
-      >
-      <br>
-      <label for="pwd">Password</label>
-      <input type="password" id="pwd" 
-      ame="pwd" minlength="5" 
-      maxlength="32" required
-      >
+      <label class="field lastOne" for="pwd">Password:
+        <input type="password" id="pwd" 
+        ame="pwd" minlength="5" 
+        maxlength="32" required
+        >
+      </label>
     </fieldset>
 
     <fieldset class="fieldset">
       <legend>An interesting fact about you!</legend>
-      <label for="lcats">Do you love cats?
-        <input type="radio" id="yes" 
+      <label class="field" for="lcats">Do you love cats?
+        <input type="radio" 
+        id="yes" 
         name="factay" value="yes"
         >
-        <label for="yes">Yes</label>
-        <input type="radio" id="no" 
+        <label class="inlineYN" for="yes">Yes</label>
+        <input type="radio" 
+        id="no" 
         name="factay" value="yes"
         >
-        <label for="no">No</label>
+        <label class="inlineYN" for="no">No</label>
       </label>
-      <br>
-      <label for="fcolor">What is your favourite color?
+      <label class="field" for="fcolor">What is your favorite color?
         <input type="color" id="fcolor" 
         name="fcolor"
         >
       </label>
-      <br>
-      <label for="gtbed">What time do you go to bed?
+      <label class="field" for="gtbed">What time do you go to bed?
         <input type="time" id="gtbed" 
         name="gtbed"
         >
       </label>
-      <br>
-      <label for="fbc">What are you favourite brand of cars?
+      <label class="field" for="fbc">What are you favorite brand of cars?
         <select id="fbcs" name="fbc" 
         size="0" multiple
         >
@@ -94,8 +86,7 @@
           <option value="lada">Lada</option>
         </select>
       </label>
-      <br>
-      <label for="rate">How do you rate our work?
+      <label class="field lastOne" for="rate">How do you rate our work?
         <input type="range" id="rate" 
         name="rate" min="1" 
         max="5" value="1"
@@ -103,16 +94,15 @@
       </label>
     </fieldset>
 
-    <fieldset class="fieldset">
+    <fieldset class="fieldset lastOne">
       <legend> Additional info:</legend>
-      <label for="cmts">Comments:
+      <label class="field" for="cmts">Comments:
         <textarea id="cmts" rows="2" 
         cols="20"
         >
         </textarea>
       </label>
-      <br>
-      <label for="recus">Would you recommend us?
+      <label class="field lastOne" for="recus">Would you recommend us?
         <select id="recus" name=" recus">
           <option value="Yes">yes</option>
           <option value="No">no</option>
